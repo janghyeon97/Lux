@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # UE file types
 *.uasset filter=lfs diff=lfs merge=lfs -text
 *.umap filter=lfs diff=lfs merge=lfs -text
@@ -12,3 +13,6 @@
 *.wav filter=lfs diff=lfs merge=lfs -text
 *.xcf filter=lfs diff=lfs merge=lfs -text
 *.jpg filter=lfs diff=lfs merge=lfs -text
+=======
+*.psd filter=lfs diff=lfs merge=lfs -text
+>>>>>>> 4cc0b30601221059d9561dc2c72d99b22a409e81
