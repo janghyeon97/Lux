@@ -1,0 +1,1818 @@
+[
+	{
+		"file": "C:\\Work\\Lux\\Plugins\\ModularGameplayActors\\Source\\ModularGameplayActors\\ModularGameplayActors.Build.cs",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\ModularGameplayActors.48.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Plugins\\ModularGameplayActors\\Source\\ModularGameplayActors\\Private\\ModularAIController.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\ModularGameplayActors.48.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Plugins\\ModularGameplayActors\\Source\\ModularGameplayActors\\Private\\ModularCharacter.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\ModularGameplayActors.48.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Plugins\\ModularGameplayActors\\Source\\ModularGameplayActors\\Private\\ModularGameMode.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\ModularGameplayActors.48.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Plugins\\ModularGameplayActors\\Source\\ModularGameplayActors\\Private\\ModularGameState.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\ModularGameplayActors.48.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Plugins\\ModularGameplayActors\\Source\\ModularGameplayActors\\Private\\ModularGameplayActorsModule.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\ModularGameplayActors.48.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Plugins\\ModularGameplayActors\\Source\\ModularGameplayActors\\Private\\ModularPawn.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\ModularGameplayActors.48.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Plugins\\ModularGameplayActors\\Source\\ModularGameplayActors\\Private\\ModularPlayerController.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\ModularGameplayActors.48.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Plugins\\ModularGameplayActors\\Source\\ModularGameplayActors\\Private\\ModularPlayerState.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\ModularGameplayActors.48.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Plugins\\ModularGameplayActors\\Source\\ModularGameplayActors\\Public\\ModularAIController.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\ModularGameplayActors.48.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Plugins\\ModularGameplayActors\\Source\\ModularGameplayActors\\Public\\ModularCharacter.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\ModularGameplayActors.48.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Plugins\\ModularGameplayActors\\Source\\ModularGameplayActors\\Public\\ModularGameMode.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\ModularGameplayActors.48.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Plugins\\ModularGameplayActors\\Source\\ModularGameplayActors\\Public\\ModularGameState.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\ModularGameplayActors.48.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Plugins\\ModularGameplayActors\\Source\\ModularGameplayActors\\Public\\ModularPawn.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\ModularGameplayActors.48.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Plugins\\ModularGameplayActors\\Source\\ModularGameplayActors\\Public\\ModularPlayerController.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\ModularGameplayActors.48.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Plugins\\ModularGameplayActors\\Source\\ModularGameplayActors\\Public\\ModularPlayerState.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\ModularGameplayActors.48.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\LuxEditor\\LuxAttributeCustomization.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\LuxEditor.2.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\LuxEditor\\LuxAttributeCustomization.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\LuxEditor.2.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\LuxEditor\\LuxEditor.Build.cs",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\LuxEditor.2.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\LuxEditor\\LuxEditorModule.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\LuxEditor.2.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\ActionSystemComponent.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\ActionSystemComponent.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\ActionSystemGlobals.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\ActionSystemGlobals.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\ActionSystemInterface.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\ActionSystemInterface.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Actions\\Aurora\\AuroraAction_Cryoseism.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Actions\\Aurora\\AuroraAction_Cryoseism.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Actions\\Aurora\\AuroraAction_FrozenSimulacrum.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Actions\\Aurora\\AuroraAction_FrozenSimulacrum.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Actions\\Aurora\\AuroraAction_FrozenSword.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Actions\\Aurora\\AuroraAction_FrozenSword.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Actions\\Aurora\\AuroraAction_GlacialCharge.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Actions\\Aurora\\AuroraAction_GlacialCharge.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Actions\\Aurora\\AuroraAction_Hoarfrost.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Actions\\Aurora\\AuroraAction_Hoarfrost.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Actions\\LuxAction.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Actions\\LuxAction.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Actions\\LuxActionCost.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Actions\\LuxActionCost.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Actions\\LuxActionLevelData.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Actions\\LuxActionLevelData.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Actions\\LuxActionTypes.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Actions\\LuxActionTypes.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Actions\\LuxDynamicValue.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Actions\\LuxDynamicValue.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Actions\\LuxPayload.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Actions\\LuxPayload.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Actions\\Phase\\LuxActionPhaseBehavior.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Actions\\Phase\\LuxActionPhaseBehavior.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Actions\\Phase\\LuxActionPhaseCondition.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Actions\\Phase\\LuxActionPhaseCondition.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Actions\\Phase\\LuxActionPhaseData.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Actions\\Phase\\LuxActionPhaseData.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Actions\\Phase\\LuxActionPhaseTags.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Actions\\Phase\\LuxActionPhaseTags.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Actions\\Phase\\LuxActionPhaseTypes.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Actions\\Phase\\LuxActionPhaseTypes.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Attributes\\CombatSet.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Attributes\\CombatSet.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Attributes\\DefenseSet.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Attributes\\DefenseSet.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Attributes\\LuxAttributeSet.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Attributes\\LuxAttributeSet.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Attributes\\MovementSet.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Attributes\\MovementSet.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Attributes\\ResourceSet.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Attributes\\ResourceSet.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Effects\\LuxEffect.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Effects\\LuxEffect.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Effects\\LuxEffectTypes.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Effects\\LuxEffectTypes.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Executions\\LuxExecutionCalculation.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Executions\\LuxExecutionCalculation.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Executions\\LuxExecution_AttackSpeedCooldown.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Executions\\LuxExecution_AttackSpeedCooldown.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Executions\\LuxExecution_Damage.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Executions\\LuxExecution_Damage.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Executions\\LuxExecution_LevelDataCooldown.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Executions\\LuxExecution_LevelDataCooldown.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Executions\\LuxExecution_LevelDataCost.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Executions\\LuxExecution_LevelDataCost.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\LuxActionSet.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\LuxActionSet.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\LuxActionSystemTypes.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\LuxActionSystemTypes.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\LuxActionTagRelationshipMapping.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\LuxActionTagRelationshipMapping.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Tasks\\Aurora\\LuxActionTask_TraceAndBuildPath.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Tasks\\Aurora\\LuxActionTask_TraceAndBuildPath.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Tasks\\LuxActionTask.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Tasks\\LuxActionTask.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Tasks\\LuxActionTask_FollowSpline.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Tasks\\LuxActionTask_FollowSpline.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Tasks\\LuxActionTask_LeapToLocation.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Tasks\\LuxActionTask_LeapToLocation.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Tasks\\LuxActionTask_PlayMontageAndWait.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Tasks\\LuxActionTask_PlayMontageAndWait.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Tasks\\LuxActionTask_WaitDelay.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Tasks\\LuxActionTask_WaitDelay.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Tasks\\LuxActionTask_WaitGameplayEvent.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Tasks\\LuxActionTask_WaitGameplayEvent.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Tasks\\LuxActionTask_WaitInputPress.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Tasks\\LuxActionTask_WaitInputPress.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Tasks\\LuxActionTask_WaitInputRelease.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Tasks\\LuxActionTask_WaitInputRelease.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Tasks\\LuxActionTask_WaitOverlap.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Tasks\\LuxActionTask_WaitOverlap.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Tasks\\LuxActionTask_WaitPhaseDelay.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Tasks\\LuxActionTask_WaitPhaseDelay.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Tasks\\LuxActionTask_WaitTargetData.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\ActionSystem\\Tasks\\LuxActionTask_WaitTargetData.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Actors\\Action\\Aurora\\CryoseismExplosion.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Actors\\Action\\Aurora\\CryoseismExplosion.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Actors\\Action\\Aurora\\FrozenSimulacrum.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Actors\\Action\\Aurora\\FrozenSimulacrum.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Actors\\Action\\Aurora\\GlacialPath.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Actors\\Action\\Aurora\\GlacialPath.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Actors\\Action\\Aurora\\Hoarfrost.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Actors\\Action\\Aurora\\Hoarfrost.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Actors\\ActorInitData.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Actors\\ActorInitData.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Actors\\LuxActionSpawnedActorInterface.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Actors\\LuxBaseActionActor.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Actors\\LuxBaseActionActor.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Animations\\LuxAnimInstance.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Animations\\LuxAnimInstance.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Animations\\LuxAnimationData.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Animations\\LuxAnimationData.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Camera\\LuxCameraComponent.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Camera\\LuxCameraComponent.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Camera\\LuxCameraMode.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Camera\\LuxCameraMode.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Camera\\LuxCameraMode_Focus.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Camera\\LuxCameraMode_Focus.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Character\\LuxAICharacter.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Character\\LuxAICharacter.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Character\\LuxCharacter.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Character\\LuxCharacter.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Character\\LuxCharacterMovementComponent.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Character\\LuxCharacterMovementComponent.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Character\\LuxHeroCharacter.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Character\\LuxHeroCharacter.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Character\\LuxHeroComponent.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Character\\LuxHeroComponent.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Character\\LuxPawn.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Character\\LuxPawn.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Character\\LuxPawnData.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Character\\LuxPawnData.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Character\\LuxPawnExtensionComponent.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Character\\LuxPawnExtensionComponent.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Cosmetic\\Aurora\\Cosmetic_FreezeSegments.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Cosmetic\\Aurora\\Cosmetic_FreezeSegments.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\CrowdControl\\Action\\LuxAction_CrowdControlBase.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\CrowdControl\\Action\\LuxAction_CrowdControlBase.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Cues\\Aurora\\CueNotify_Aurora_FrostShield.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Cues\\Aurora\\CueNotify_Aurora_FrostShield.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Cues\\Aurora\\CueNotify_Aurora_Hoarfrost.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Cues\\Aurora\\CueNotify_Aurora_Hoarfrost.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Cues\\LuxCueManager.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Cues\\LuxCueManager.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Cues\\LuxCueNotify.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Cues\\LuxCueNotify.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Cues\\LuxCueTags.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Cues\\LuxCueTags.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Game\\LuxAIController.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Game\\LuxAIController.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Game\\LuxGameInstance.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Game\\LuxGameInstance.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Game\\LuxGameMode.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Game\\LuxGameMode.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Game\\LuxGameState.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Game\\LuxGameState.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Game\\LuxPawnDataManagerComponent.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Game\\LuxPawnDataManagerComponent.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Game\\LuxPlayerController.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Game\\LuxPlayerController.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Game\\LuxPlayerState.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Game\\LuxPlayerState.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Game\\TestPlayerState.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Game\\TestPlayerState.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Input\\LuxInputComponent.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Input\\LuxInputComponent.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Input\\LuxInputConfig.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Input\\LuxInputConfig.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Lux.Build.cs",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\LuxActionTags.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\LuxActionTags.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\LuxGameplayTags.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\LuxGameplayTags.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\LuxLogChannels.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\LuxLogChannels.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\LuxModule.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\System\\GameplayTagStack.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\System\\GameplayTagStack.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\System\\LuxAssetManager.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\System\\LuxAssetManager.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\System\\LuxCombatManager.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\System\\LuxCombatManager.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\System\\LuxGameData.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\System\\LuxGameData.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\System\\PhysicalMaterialWithTags.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\System\\PhysicalMaterialWithTags.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Targeting\\Filters\\TargetFilter.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Targeting\\Filters\\TargetFilter.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Targeting\\LuxTargetingInterface.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Targeting\\LuxTargetingInterface.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Targeting\\TargetingComponent.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Targeting\\TargetingComponent.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Teams\\LuxTeamAgentInterface.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Teams\\LuxTeamAgentInterface.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Teams\\LuxTeamStatics.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\Teams\\LuxTeamStatics.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\UI\\AttributeBarBase.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\UI\\AttributeBarBase.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\UI\\LuxHUD.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\UI\\LuxHUD.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\UI\\LuxUserWidgetBase.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\UI\\LuxUserWidgetBase.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\UI\\MainHUD.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\UI\\MainHUD.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\UI\\UW_ActionIcon.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\UI\\UW_ActionIcon.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\UI\\UW_ActionPanel.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\UI\\UW_ActionPanel.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\UI\\VitalsWidget.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Work\\Lux\\Source\\Lux\\UI\\VitalsWidget.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Work\\Lux\\.vscode\\compileCommands_Default\\Lux.1.rsp"
+		],
+		"directory": "D:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	}
+]
