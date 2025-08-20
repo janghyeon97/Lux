@@ -77,3 +77,57 @@ Plugins/**/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+#Unreal Generated Files#
+
+####################
+
+#*/Build
+
+*/Binaries
+
+*/DerivedDataCache
+
+*/Intermediate
+
+*/Saved
+
+############
+
+#Asset Files#
+
+###########
+
+*/Content/Assets
+
+*/Content/ParagonAurora
+
+*/Content/Camera
+
+*/Content/Characters
+
+*/Content/CrowdControls
+
+*/Content/Cues
+
+*/Content/Game
+
+*/Content/GameData
+
+*/Content/Input
+
+*/Content/LuxEffects
+
+*/Content/Maps
+
+*/Content/UI
+
+*/Content/__ExternalActors__
+
+##################
+
+#VS Generated Files#
+
+#################
+
+*/.vs
