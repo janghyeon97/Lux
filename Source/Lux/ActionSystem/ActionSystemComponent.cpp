@@ -797,10 +797,10 @@ void UActionSystemComponent::ReHomeExecutionInstancedAction(FActiveLuxAction& Au
 
 	AuthoritativeActionPtr->LifecycleState = ELuxActionLifecycleState::Executing;
 
-	// 📝 예측 액션의 모든 상태를 권위적인 액션으로 이전합니다 (태스크, 카메라 모드, 태그, 스폰된 액터 등)
+	// 예측 액션의 모든 상태를 서버에서 복제된 액션으로 이전합니다 (태스크, 카메라 모드, 태그, 스폰된 액터 등)
 	AuthoritativeActionPtr->TransferStateFrom(PredictedAction);
 
-	// 예측 인스턴스를 즉시 파괴하지 않고, 다음 프레임에 파괴하도록 지연시킵니다.
+	// 예측 인스턴스를 즉시 파괴하지 않고 다음 프레임에 파괴하도록 지연시킵니다.
 	if (GetWorld())
 	{
 		FTimerHandle TempHandle;
