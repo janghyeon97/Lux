@@ -69,8 +69,6 @@
 - Cryoseism Passive — 기본공격 적중 시 궁극기 쿨다운 감소:  
   ![Cryoseism Passive](docs/media/aurora_cryoseism_passive.gif)
 
-> GIF 경로는 `docs/media/*.gif` 기준 예시입니다. 실제 경로/파일은 리포지토리 환경에 맞게 수정 부탁드립니다.
-
 ---
 
 ## 기술 스택/핵심 시스템
