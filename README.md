@@ -183,16 +183,6 @@ ULuxActionTask_PlayMontageAndWait::PlayMontageAndWait(this, MontageToPlay, 1.0f)
 
 ---
 
-## 라이선스/문의
-
-- 라이선스: 프로젝트 전용(내부 포트폴리오 용도). 외부 배포는 별도 협의 부탁드립니다.
-- 문의:  
-  - 모듈/아키텍처: `Source/Lux/LuxModule.cpp`, `Lux.Build.cs`  
-  - 액션 시스템: `Source/Lux/ActionSystem/`  
-  - Aurora 샘플: `ActionSystem/Actions/Aurora/`, `Actors/Action/Aurora/`, `Cues/Aurora/`
-
----
-
 ### 참고 소스 링크 예시
 
 - `UAuroraAction_Hoarfrost`: `ActionSystem/Actions/Aurora/AuroraAction_Hoarfrost.cpp`
