@@ -16,18 +16,21 @@ struct FAuroraActionLevelData_Hoarfrost : public FActionLevelDataBase
 	GENERATED_BODY()
 
 public:
-	 UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Hoarfrost")
-	 float SnareDuration = 0.0f;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Hoarfrost")
+	TEnumAsByte<ECollisionChannel> CollisionChannel = ECollisionChannel::ECC_GameTraceChannel7;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Hoarfrost")
+	float SnareDuration = 0.0f;
 };
 
 /**
- * 
+ *
  */
 UCLASS()
 class LUX_API UAuroraAction_Hoarfrost : public ULuxAction
 {
 	GENERATED_BODY()
-	
+
 public:
 	UAuroraAction_Hoarfrost();
 

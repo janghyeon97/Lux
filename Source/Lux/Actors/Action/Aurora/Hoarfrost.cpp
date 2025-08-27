@@ -79,6 +79,7 @@ void AHoarfrost::Initialize(ULuxAction* Action, bool bAutoStart)
 	this->Radius = Data->Radius;
 	this->LifeTime = Data->Duration;
 	this->Angle = 360.f / static_cast<float>(Data->Count);
+	this->CollisionChannel = Data->CollisionChannel;
 
 	AActor* AvatarActor = SourceASC->GetAvatarActor();
 	if(AvatarActor)
@@ -222,14 +223,17 @@ void AHoarfrost::OnSegmentTick()
 	CurrentBox->SetWorldLocationAndRotation(FinalSpawnLocation, FinalSpawnRotation);
 
 	CurrentBox->SetCollisionEnabled(ECollisionEnabled::QueryOnly); // 쿼리(오버랩, 트레이스)만 가능하도록 설정
-	CurrentBox->SetCollisionObjectType(ECC_GameTraceChannel7);     // 이 박스의 오브젝트 타입을 'DetectPlayer'로 설정
+	CurrentBox->SetCollisionObjectType(CollisionChannel);     // 이 박스의 오브젝트 타입을 'DetectPlayer'로 설정
 
-	// 모든 채널에 대한 반응을 먼저 '무시'로 초기화합니다.
+	// 모든 채널에 대한 반응을 'ECR_Ignore'로 초기화합니다.
 	CurrentBox->SetCollisionResponseToAllChannels(ECR_Ignore);
 	// 오버랩을 원하는 특정 채널들에 대해서만 'Overlap'으로 설정합니다.
-	CurrentBox->SetCollisionResponseToChannel(ECC_GameTraceChannel1, ECR_Overlap); // Player
+	CurrentBox->SetCollisionResponseToChannel(ECC_GameTraceChannel1, ECR_Overlap); 	// Player
 	CurrentBox->SetCollisionResponseToChannel(ECC_GameTraceChannel2, ECR_Overlap);	// Minion
 	CurrentBox->SetCollisionResponseToChannel(ECC_GameTraceChannel3, ECR_Overlap);	// Monster
+	CurrentBox->SetCollisionResponseToChannel(ECC_GameTraceChannel4, ECR_Overlap);	// EpicMonster
+	CurrentBox->SetCollisionResponseToChannel(ECC_GameTraceChannel5, ECR_Overlap);	// EpicMinion
+	CurrentBox->SetCollisionResponseToChannel(ECC_GameTraceChannel6, ECR_Overlap);	// Structure
 
 	CurrentBox->SetGenerateOverlapEvents(true);
 
@@ -239,6 +243,8 @@ void AHoarfrost::OnSegmentTick()
     
 void AHoarfrost::OnSegmentOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
+	UE_LOG(LogLuxActionSystem, Warning, TEXT("[%s] 얼음 장판에 다른 캐릭터 '%s' 가 오버랩되었습니다. "), ANSI_TO_TCHAR(__FUNCTION__), *OtherActor->GetName());
+
 	if (!SourceASC.IsValid())
 	{
 		return;
@@ -255,8 +261,6 @@ void AHoarfrost::OnSegmentOverlap(UPrimitiveComponent* OverlappedComponent, AAct
 	{
 		return;
 	}*/
-
-	UE_LOG(LogLuxActionSystem, Warning, TEXT("[%s] 얼음 장판에 다른 캐릭터 '%s' 가 오버랩되었습니다. "), ANSI_TO_TCHAR(__FUNCTION__), *OtherActor->GetName());
 
 	// 액션 시스템 인터페이스가 없는 액터는 무시합니다.
 	IActionSystemInterface* ASCInterface = Cast<IActionSystemInterface>(OtherActor);

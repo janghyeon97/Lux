@@ -40,6 +40,9 @@ protected:
 	void OnSegmentTick();
 
 protected:
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Hoarfrost")
+	TEnumAsByte<ECollisionChannel> CollisionChannel = ECollisionChannel::ECC_GameTraceChannel7;
+
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Hoarfrost|Components")
 	TArray<TObjectPtr<UBoxComponent>> CollisionBoxes;
 
