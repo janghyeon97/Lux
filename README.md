@@ -79,8 +79,6 @@
 - Cryoseism Passive — 기본공격 적중 시 궁극기 쿨다운 감소:  
   ![Cryoseism Passive](docs/media/aurora_cryoseism_passive.gif)
 
-> GIF 경로는 `docs/media/*.gif` 기준 예시입니다. 실제 경로/파일은 리포지토리 환경에 맞게 수정 부탁드립니다.
-
 ---
 
 ## 기술 스택/핵심 시스템
@@ -252,16 +250,6 @@ ULuxActionTask_PlayMontageAndWait::PlayMontageAndWait(this, MontageToPlay, 1.0f)
 - **HUD 디버그**: `B` 키로 액션/효과/태그/카메라 상태 오버레이 토글 (`LuxHUD`)
 - **쿨다운 UI**: `UW_ActionIcon`이 시작/진행/종료 이벤트로 게이지 갱신
 - **로그 채널**: `LogLuxActionSystem`, `LogLuxCooldown`, `LogLuxCombat` 등
-
----
-
-## 라이선스/문의
-
-- 라이선스: 프로젝트 전용(내부 포트폴리오 용도). 외부 배포는 별도 협의 부탁드립니다.
-- 문의:  
-  - 모듈/아키텍처: `Source/Lux/LuxModule.cpp`, `Lux.Build.cs`  
-  - 액션 시스템: `Source/Lux/ActionSystem/`  
-  - Aurora 샘플: `ActionSystem/Actions/Aurora/`, `Actors/Action/Aurora/`, `Cues/Aurora/`
 
 ---
 
