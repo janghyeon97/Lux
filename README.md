@@ -13,7 +13,6 @@
 
 ## 목차
 
-- [주요 하이라이트](#주요-하이라이트)
 - [아키텍처 설계 철학](#아키텍처-설계-철학)
 - [입력 가이드](#입력-가이드)
 - [샘플 액션 쇼케이스 (GIF)](#샘플-액션-쇼케이스-gif)
@@ -25,21 +24,7 @@
 - [빠른 시작: 새 액션 추가](#빠른-시작-새-액션-추가)
 - [디버그/툴링](#디버그툴링)
 - [라이선스/문의](#라이선스문의)
-
----
-
-## 주요 하이라이트
-
-- **액션 상태머신**: `ULuxAction` + `Phase` 전환 규칙으로 Begin/Execute/Recovery/End/Interrupt, Dash/Leap/Landing 등을 선언적으로 구성
-
-- **태스크 조립식 설계**: `ULuxActionTask_PlayMontageAndWait`, `..._LeapToLocation`, `..._FollowSpline`, `..._LandingControl`, `..._WaitForServer` 등 비동기 유닛을 조합
-
-- **태그 지향 전투/효과**: `ULuxCombatManager`, `ULuxEffect`, `FLuxEffectSpec` + ByCaller 파라미터로 데미지/버프/CC 데이터-드리븐 처리
-
-- **쿨다운/패시브**: `ULuxCooldownTracker`로 태그 기반 쿨다운/감소, 이벤트 구독으로 패시브 트리거
-
-- **타겟팅/카메라/UI**: `UTargetingComponent`(오버랩/라인/스윕/우선순위), `ULuxCameraComponent`(모드), `LuxHUD`/`UW_ActionIcon`/`UW_ActionTooltip`
-
+- 
 ---
 
 ## 아키텍처 설계 철학
@@ -47,13 +32,13 @@
 ### 1. **데이터 주도 설계 (Data-Driven Design)**
 > "프로그래머의 개입 없이 기획자가 게임을 만든다."
 
-액션의 흐름(`Phase`, 전환 조건/행동), 수치(`DataTable`), 툴팁 수식까지 코드와 분리했습니다.  
+액션의 흐름(`Phase`), 수치(`DataTable`), 툴팁 수식까지 코드와 분리했습니다.  
 기획자분들이 직접 밸런싱/로직을 수정하며 빠르게 프로토타이핑하실 수 있도록 설계했습니다.
 
 ### 2. **모듈성 및 책임 분리 (Modularity & SRP)**
 > "각 부품은 하나의 역할만 완벽하게 수행한다."
 
-`ULuxAction`(흐름 제어), `ULuxActionTask`(비동기 작업), `ULuxCooldownTracker`(쿨다운),  
+`ULuxAction`(액션의 로직), `ULuxActionTask`(비동기 작업), `ULuxCooldownTracker`(쿨다운),  
 `ULuxEffect`(효과), `ULuxCombatManager`(전투)처럼 단일 책임을 명확히 분리하여  
 테스트 용이성과 재사용성을 높였습니다.
 
@@ -61,7 +46,6 @@
 > "모든 기능은 멀티플레이어 환경을 가정하고 설계한다."
 
 서버 권위를 기본으로, `PredictionKey` 기반 클라이언트 예측과 Task/Phase **Re-Home** 동기화를 내장했습니다.  
-초기 단계부터 지연을 흡수하고 쾌적한 멀티플레이 경험을 목표로 합니다.
 
 ---
 
@@ -76,16 +60,16 @@
 
 ## 샘플 액션 쇼케이스 (GIF)
 
-- **Hoarfrost** — 장판 동결:  
+- **Hoarfrost** — :  
   ![Hoarfrost](docs/media/aurora_hoarfrost.gif)
 
-- **Glacial Charge** — 지형 분석 → 얼음길 생성 → 스플라인 돌진 → 재시전 대기:  
+- **Glacial Charge** — 지형 분석 → 얼음길 생성 → 스플라인을 따라 돌진 → 재시전 대기:  
   ![Glacial Charge](docs/media/aurora_glacial_charge.gif)
 
-- **Frozen Simulacrum** — 방향 섹션 점프 + 분신:  
+- **Frozen Simulacrum** — 움직이는 방향에 따른 점프 + 분신 생성:  
   ![Frozen Simulacrum](docs/media/aurora_frozen_simulacrum.gif)
 
-- **Frozen Sword** — 클라 예측 타격 → 서버 검증 → 데미지 적용:  
+- **Frozen Sword** — 클라이언트 예측 타격 → 서버 검증 → 데미지 적용:  
   ![Frozen Sword](docs/media/aurora_frozen_sword.gif)
 
 - **Cryoseism (궁극기)** — 도약/충돌/착지 제어 + 연쇄 폭발:  
