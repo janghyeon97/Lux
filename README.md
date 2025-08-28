@@ -7,40 +7,24 @@ Lux는 게임 클라이언트 개발 포트폴리오를 위해 제작된 샘플/
 ## 목차
 
 - [아키텍처](#아키텍처)
-- [주요 기능](#주요-기능)
-- [입력 가이드](#입력-가이드)
-- [샘플 액션 쇼케이스](#샘플-액션-쇼케이스)
+
+- [Aurora액션 GIF](#Aurora-액션-GIF)
+
 - [핵심 시스템](#핵심-시스템)
+
 - [데이터 주도 워크플로우](#데이터-주도-워크플로우)
+
 - [네트워킹 및 예측](#네트워킹-및-예측)
+
 - [프로젝트 구조](#프로젝트-구조)
+
 - [시작하기](#시작하기)
+
 - [빌드 및 실행](#빌드-및-실행)
+
+- [입력 가이드](#입력-가이드)
+
 - [새 액션 추가하기](#새-액션-추가하기)
-
----
-
-## 주요 기능
-
-### **1. 액션 상태머신**
-
-  `ULuxAction`과 Phase 전환 규칙을 통해 Begin/Execute/Recovery/End/Interrupt, Dash/Leap/Landing 등의 복잡한 액션 흐름을 선언적으로 구성합니다.
-
-### **2. 조립식 태스크**
-
-  `PlayMontageAndWait`, `LeapToLocation`, `FollowSpline` 등 비동기 유닛을 조합하여 액션을 손쉽게 제작할 수 있습니다.
-
-### **3. 태그 기반 전투 및 효과 시스템**
-
-  `ULuxCombatManager`, `ULuxEffect`, `FLuxEffectSpec`을 활용하여 데미지, 버프, CC(군중 제어) 효과를 데이터 중심으로 처리합니다.
-
-### **4. 쿨다운 및 패시브 시스템**
-
-  `ULuxCooldownTracker`로 태그 기반 쿨다운을 관리하고, 이벤트 구독을 통해 패시브 스킬을 트리거합니다.
-
-### **5. 다용도 타겟팅/카메라/UI**
-
-  오버랩, 라인, 스윕 등 다양한 검출 방식을 지원하는 `UTargetingComponent`와 모드 기반의 `ULuxCameraComponent`, 그리고 `LuxHUD`를 제공합니다.
 
 ---
 
@@ -65,60 +49,55 @@ Lux의 시스템은 각자의 역할이 명확하게 구분되어 있습니다. 
 
 ---
 
-## 입력 가이드
-
-- **Q / E / R / LMB / RMB**: 액션 사용 (프로필/데이터에 매핑된 액션 실행)
-- **B**: 액션, 효과, 태그 상태를 시각적으로 보여주는 디버그 HUD 토글
-
-> 입력은 `LuxGameplayTags::InputTag_*`에 매핑되어 있으며, 프로젝트 설정에서 자유롭게 변경할 수 있습니다.
-
----
-
 ## Aurora 액션 GIF
 
-- ## **Hoarfrost**
-  > 자신의 주변 땅에 서리 고리를 생성합니다. 고리에 닿은 적은 능력 피해를 입고 0.75~1.5초 동안 속박에 걸립니다.
+- ### Hoarfrost
   ![Hoarfrost](Docs/Media/Hoarfrost.gif)
+  > 자신의 주변 땅에 서리 고리를 생성합니다. 고리에 닿은 적은 능력 피해를 입고 0.75~1.5초 동안 속박에 걸립니다.
 
-- ## **Glacial Charge**
-  > 앞으로 질주하며 다른 영웅들이 걸을 수 있는 길을 남깁니다. 7초 안에 재사용 시 생성된 길을 파괴할 수 있습니다.
+- ### Glacial Charge
   ![Glacial Charge](Docs/Media/Glacial_Charge.gif)
+  > 앞으로 질주하며 다른 영웅들이 걸을 수 있는 길을 남깁니다. 7초 안에 재사용 시 생성된 길을 파괴할 수 있습니다.
 
-- ## **Frozen Simulacrum**
-  > 자신이 움직이는 방향으로 도약하며 적 미니언과 타워를 도발하는 얼음 조각상을 남깁니다. 조각상은 일정 시간 유지되며 조각상 주변 적을 둔화시킵니다
+- ### Frozen Simulacrum
   ![Frozen Simulacrum](Docs/Media/Frozen_Simulacrum.gif)
+  > 자신이 움직이는 방향으로 도약하며 적 미니언과 타워를 도발하는 얼음 조각상을 남깁니다. 조각상은 일정 시간 유지되며 조각상 주변 적을 둔화시킵니다
 
-- ## **Frozen Sword**
-  > 검을 휘둘러 피해를 입힙니다.
+- ### Frozen Sword
   ![Frozen Sword](Docs/Media/Frozen_Sword.gif)
+  > 검을 휘둘러 피해를 입힙니다.
 
-- ## **Cryoseism (궁극기)**
-  > 특정 지역을 얼려 1.5초 동안 모든 적의 이동 속도를 감소시킵니다. 이후 얼음이 폭발하여 적을 1초 동안 기절시키고 피해를 입힙니다. 주변 적에게 추가로 폭발 효과가 확산됩니다.
+- ### Cryoseism (궁극기)
   ![Cryoseism](Docs/Media/Cryoseism.gif)
+  > 특정 지역을 얼려 1.5초 동안 모든 적의 이동 속도를 감소시킵니다. 이후 얼음이 폭발하여 적을 1초 동안 기절시키고 피해를 입힙니다. 주변 적에게 추가로 폭발 효과가 확산됩니다.
 
-- ## **Cryoseism Passive**
-  > 기본공격 적중 시 궁극기 쿨다운 감소합니다.
+- ### Cryoseism Passive (패시브)
   ![Cryoseism Passive](Docs/Media/Cryoseism_Passive.gif)
+  > 기본공격 적중 시 궁극기 쿨다운 감소합니다.
+
 ---
 
 ## 핵심 시스템
 
-### **ActionSystem 구조**
+### ActionSystemComponent 구조
 
 ![ActionSystemDiagram](Docs/Media/ActionSystem_Diagram.png)
 
+  ActionSystemComponent는 입력, 액션, 효과 등 모든 게임플레이 로직의 흐름을 중앙에서 조율하는 허브 역할을 합니다.</br>
+  플레이어의 입력을 받아 해당하는 액션을 찾아 실행하고, 액션의 생명주기 동안 발생하는 모든 이벤트를 관리하며 다른 시스템과 상호작용합니다.
 
-### **`ULuxAction`: 액션의 생명주기 관리**
+### 1. 액션 시스템 (Action System)
+ 액션 시스템은 캐릭터의 모든 행동(스킬, 공격, 이동 등)의 생명주기를 관리하고 실행합니다.
 
-액션의 전체 생명주기를 관리하는 핵심 클래스로, 페이즈 기반 상태 머신과 태그, 이벤트, 태스크 시스템을 통합하여 관리합니다.
+#### 1.1 페이즈 시스템
+ - 액션의 진행 단계를 `Phase.Action.Begin / Execute / End` 와 같이 GameplayTag 로 정희합니다.
+ - 기본 흐름뿐만 아니라, Interrupt, 이동, 재시전과 같은 특수 상황도 페이즈 전환 규칙을 통해 유연하게 처리합니다.
 
-#### **페이즈 시스템**
-액션의 진행 단계를 체계적으로 관리하는 시스템입니다. 기본 흐름(Begin → Execute → Recovery → End)뿐만 아니라, Interrupt, 이동, 재시전과 같은 특수 상황도 페이즈 전환 규칙을 통해 유연하게 처리합니다.
+#### 1.2 태스크 시스템
+ - 액션을 구성하는 가장 작은 단위의 작업입니다. 
+ - PlayMontageAndWait(애니메이션 재생), LeapToLocation(도약), FollowSpline(경로 이동)과 같은 비동기적인 작업들을 태스크로 구현합니다.
 
-#### **태스크 시스템**
-액션 내에서 수행되는 구체적인 작업 단위입니다. `PlayMontageAndWait`(애니메이션), `LeapToLocation`(도약) 등 독립적으로 실행되는 다양한 태스크를 조합하여 액션의 흐름을 제어합니다.
-
-### **`ULuxEffect`: 데이터 기반 효과 처리**
+### 2. ULuxEffect: 데이터 기반 효과 처리
 
 데미지, 버프, CC 등 다양한 효과를 `FLuxEffectSpec`이라는 데이터 구조를 통해 처리합니다. ByCaller 파라미터를 사용하여 런타임에 동적으로 수치를 변경할 수 있습니다.
 
@@ -180,6 +159,15 @@ Source/Lux
 
 ---
 
+## 입력 가이드
+
+- **Q / E / R / LMB / RMB**: 액션 사용 (프로필/데이터에 매핑된 액션 실행)
+- **B**: 액션, 효과, 태그 상태를 시각적으로 보여주는 디버그 HUD 토글
+
+> 입력은 `LuxGameplayTags::InputTag_*`에 매핑되어 있으며, 프로젝트 설정에서 자유롭게 변경할 수 있습니다.
+
+---
+
 ## 새 액션 추가하기
 
 ### **1. 클래스 생성**
@@ -223,5 +211,3 @@ ULuxActionTask_PlayMontageAndWait::PlayMontageAndWait(this, MontageToPlay, 1.0f)
 ## 라이선스
 
 이 프로젝트는 포트폴리오 용도로 제작되었으며, 외부 배포 시에는 별도 협의가 필요합니다. 자세한 내용은 문의해 주세요.
-
-
