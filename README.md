@@ -58,7 +58,7 @@
 
 ---
 
-## 샘플 액션 쇼케이스 (GIF)
+## 액션 구현영상 예시(GIF)
 
 - **Hoarfrost** — :  
   ![Hoarfrost](docs/media/aurora_hoarfrost.gif)
