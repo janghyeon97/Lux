@@ -6,8 +6,8 @@ Lux는 게임 클라이언트 개발 포트폴리오를 위해 제작된 샘플/
 
 ## 목차
 
-- [주요 기능](#주요-기능)
 - [아키텍처](#아키텍처)
+- [주요 기능](#주요-기능)
 - [입력 가이드](#입력-가이드)
 - [샘플 액션 쇼케이스](#샘플-액션-쇼케이스)
 - [핵심 시스템](#핵심-시스템)
@@ -17,45 +17,51 @@ Lux는 게임 클라이언트 개발 포트폴리오를 위해 제작된 샘플/
 - [시작하기](#시작하기)
 - [빌드 및 실행](#빌드-및-실행)
 - [새 액션 추가하기](#새-액션-추가하기)
-- [디버그 및 툴링](#디버그-및-툴링)
-- [라이선스](#라이선스)
 
 ---
 
 ## 주요 기능
 
-- **액션 상태머신**</br>
+### **1. 액션 상태머신**
 
   `ULuxAction`과 Phase 전환 규칙을 통해 Begin/Execute/Recovery/End/Interrupt, Dash/Leap/Landing 등의 복잡한 액션 흐름을 선언적으로 구성합니다.
 
-- **조립식 태스크 설계**: `PlayMontageAndWait`, `LeapToLocation`, `FollowSpline` 등 비동기 유닛을 조합하여 액션을 손쉽게 제작할 수 있습니다.
+### **2. 조립식 태스크**
 
-- **태그 기반 전투 및 효과 시스템**: `ULuxCombatManager`, `ULuxEffect`, `FLuxEffectSpec`을 활용하여 데미지, 버프, CC(군중 제어) 효과를 데이터 중심으로 처리합니다.
+  `PlayMontageAndWait`, `LeapToLocation`, `FollowSpline` 등 비동기 유닛을 조합하여 액션을 손쉽게 제작할 수 있습니다.
 
-- **쿨다운 및 패시브 시스템**: `ULuxCooldownTracker`로 태그 기반 쿨다운을 관리하고, 이벤트 구독을 통해 패시브 스킬을 트리거합니다.
+### **3. 태그 기반 전투 및 효과 시스템**
 
-- **다용도 타겟팅/카메라/UI**: 오버랩, 라인, 스윕 등 다양한 검출 방식을 지원하는 `UTargetingComponent`와 모드 기반의 `ULuxCameraComponent`, 그리고 `LuxHUD`를 제공합니다.
+  `ULuxCombatManager`, `ULuxEffect`, `FLuxEffectSpec`을 활용하여 데미지, 버프, CC(군중 제어) 효과를 데이터 중심으로 처리합니다.
+
+### **4. 쿨다운 및 패시브 시스템**
+
+  `ULuxCooldownTracker`로 태그 기반 쿨다운을 관리하고, 이벤트 구독을 통해 패시브 스킬을 트리거합니다.
+
+### **5. 다용도 타겟팅/카메라/UI**
+
+  오버랩, 라인, 스윕 등 다양한 검출 방식을 지원하는 `UTargetingComponent`와 모드 기반의 `ULuxCameraComponent`, 그리고 `LuxHUD`를 제공합니다.
 
 ---
 
 ## 아키텍처
 
-Lux는 다음과 같은 설계 철학을 바탕으로 개발되었습니다.
-
 ### **1. 데이터 주도 설계 (Data-Driven Design)**
 > "프로그래머의 개입 없이 기획자가 게임을 만든다."
 
-액션의 흐름(Phase), 수치(DataTable), 심지어 툴팁 수식까지 코드와 데이터를 분리했습니다. 이를 통해 기획자가 직접 밸런싱과 로직을 수정하며 빠르게 프로토타이핑할 수 있습니다.
+Lux는 액션의 흐름(Phase 전환 규칙), 각종 수치(DataTable), 그리고 UI 툴팁까지 코드와 데이터를 분리하였습니다.</br>
+이를 통해 기획자는 프로그래머의 도움 없이 직접 게임 로직과 밸런스를 수정하며, 빠르고 유연하게 프로토타입을 제작할 수 있습니다.
 
-### **2. 모듈성 및 책임 분리 (Modularity & SRP)**
+### **2. 모듈성 및 책임 분리  (Modularity & SRP)**
 > "각 부품은 하나의 역할만 완벽하게 수행한다."
 
-`ULuxAction`(흐름 제어), `ULuxActionTask`(비동기 작업), `ULuxCooldownTracker`(쿨다운) 등 각 클래스는 단일 책임을 명확히 가집니다. 이는 테스트 용이성과 코드 재사용성을 극대화합니다.
+Lux의 시스템은 각자의 역할이 명확하게 구분되어 있습니다. </nr>
+예를 들어, ULuxAction은 액션의 전체적인 흐름과 상태를 관리하고, ULuxEffect는 데미지나 버프 같은 액션의 결과를 처리하며, ULuxActionTask는 애니메이션 재생이나 이동과 같은 개별 작업을 수행합니다.
 
 ### **3. 네트워크 우선 설계 (Network-First Design)**
 > "모든 기능은 멀티플레이어 환경을 가정하고 설계한다."
 
-서버 권위를 기본으로 하며, `PredictionKey`를 이용한 클라이언트 예측과 Task/Phase Re-Home 동기화 기능을 내장했습니다. 초기 단계부터 지연 시간을 최소화하여 쾌적한 멀티플레이 경험을 제공하는 것을 목표로 합니다.
+서버가 모든 핵심 로직의 권위를 가지는 서버-클라이언트 모델을 기반으로 하며, PredictionKey를 활용한 클라이언트 예측과 Re-Home 동기화 메커니즘을 통해 네트워크 지연(Latency)으로 인한 불편함을 최소화했습니다. 이를 통해 플레이어는 쾌적하고 부드러운 멀티플레이 경험을 즐길 수 있습니다.
 
 ---
 
@@ -68,12 +74,26 @@ Lux는 다음과 같은 설계 철학을 바탕으로 개발되었습니다.
 
 ---
 
-## 샘플 액션 쇼케이스
+## Aurora 액션 GIF
 
-| Hoarfrost (장판 동결) | Glacial Charge (스플라인 돌진) | Frozen Simulacrum (분신 점프) |
-|----------------------|-------------------------------|------------------------------|
-| Frozen Sword (예측 타격) | Cryoseism (궁극기) | Cryoseism Passive (쿨다운 감소) |
+- **Hoarfrost**
+  ![Hoarfrost](docs/media/aurora_hoarfrost.gif)
 
+- **Glacial Charge**
+  ![Glacial Charge](docs/media/aurora_glacial_charge.gif)
+
+- **Frozen Simulacrum**
+  ![Frozen Simulacrum](docs/media/aurora_frozen_simulacrum.gif)
+
+- **Frozen Sword**
+  ![Frozen Sword](docs/media/aurora_frozen_sword.gif)
+
+- **Cryoseism (궁극기)**
+  ![Cryoseism](docs/media/aurora_cryoseism.gif)
+
+- **Cryoseism Passive**
+> 기본공격 적중 시 궁극기 쿨다운 감소합니다.
+  ![Cryoseism Passive](docs/media/aurora_cryoseism_passive.gif)
 ---
 
 ## 핵심 시스템
