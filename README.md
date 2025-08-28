@@ -25,7 +25,7 @@ Lux는 게임 클라이언트 개발 포트폴리오를 위해 제작된 샘플/
 
 ## 주요 기능
 
-- **선언적 액션 상태머신**: `ULuxAction`과 Phase 전환 규칙을 통해 Begin/Execute/Recovery/End/Interrupt, Dash/Leap/Landing 등의 복잡한 액션 흐름을 선언적으로 구성합니다.
+- ** 액션 상태머신**: `ULuxAction`과 Phase 전환 규칙을 통해 Begin/Execute/Recovery/End/Interrupt, Dash/Leap/Landing 등의 복잡한 액션 흐름을 선언적으로 구성합니다.
 
 - **조립식 태스크 설계**: `PlayMontageAndWait`, `LeapToLocation`, `FollowSpline` 등 비동기 유닛을 조합하여 액션을 손쉽게 제작할 수 있습니다.
 
@@ -197,16 +197,6 @@ PhaseTransitionRules.FindOrAdd(LuxPhaseTags::Phase_Action_Begin).Add(T);
 ```cpp
 ULuxActionTask_PlayMontageAndWait::PlayMontageAndWait(this, MontageToPlay, 1.0f);
 ```
-
----
-
-## 디버그 및 툴링
-
-- **HUD 디버그**: `B` 키를 눌러 액션, 효과, 태그, 카메라 상태를 실시간으로 확인할 수 있는 오버레이를 토글합니다.
-
-- **쿨다운 UI**: `UW_ActionIcon` 위젯이 쿨다운 시작, 진행, 종료 이벤트를 구독하여 원형 게이지를 자동으로 업데이트합니다.
-
-- **로그 채널**: `LogLuxActionSystem`, `LogLuxCooldown` 등 목적에 따라 분리된 로그 채널을 제공하여 디버깅을 용이하게 합니다.
 
 ---
 
