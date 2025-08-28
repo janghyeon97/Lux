@@ -78,34 +78,34 @@ Lux의 시스템은 각자의 역할이 명확하게 구분되어 있습니다. 
 
 - **Hoarfrost**
   > 자신의 주변 땅에 서리 고리를 생성합니다. 고리에 닿은 적은 능력 피해를 입고 0.75~1.5초 동안 속박에 걸립니다.
-  ![Hoarfrost](docs/media/aurora_hoarfrost.gif)
+  ![Hoarfrost](Docs/Media/Hoarfrost.gif)
 
 - **Glacial Charge**
   > 앞으로 질주하며 다른 영웅들이 걸을 수 있는 길을 남깁니다. 7초 안에 재사용 시 생성된 길을 파괴할 수 있습니다.
-  ![Glacial Charge](docs/media/aurora_glacial_charge.gif)
+  ![Glacial Charge](Docs/Media/Glacial_Charge.gif)
 
 - **Frozen Simulacrum**
   > 자신이 움직이는 방향으로 도약하며 적 미니언과 타워를 도발하는 얼음 조각상을 남깁니다. 조각상은 일정 시간 유지되며 조각상 주변 적을 둔화시킵니다
-  ![Frozen Simulacrum](docs/media/aurora_frozen_simulacrum.gif)
+  ![Frozen Simulacrum](Docs/Media/Frozen_Simulacrum.gif)
 
 - **Frozen Sword**
   > 검을 휘둘러 피해를 입힙니다.
-  ![Frozen Sword](docs/media/aurora_frozen_sword.gif)
+  ![Frozen Sword](Docs/Media/Frozen_Sword.gif)
 
 - **Cryoseism (궁극기)**
   > 특정 지역을 얼려 1.5초 동안 모든 적의 이동 속도를 감소시킵니다. 이후 얼음이 폭발하여 적을 1초 동안 기절시키고 피해를 입힙니다. 주변 적에게 추가로 폭발 효과가 확산됩니다.
-  ![Cryoseism](docs/media/aurora_cryoseism.gif)
+  ![Cryoseism](Docs/Media/Cryoseism.gif)
 
 - **Cryoseism Passive**
   > 기본공격 적중 시 궁극기 쿨다운 감소합니다.
-  ![Cryoseism Passive](docs/media/aurora_cryoseism_passive.gif)
+  ![Cryoseism Passive](Docs/Media/Cryoseism_Passive.gif)
 ---
 
 ## 핵심 시스템
 
 ### **ActionSystem 구조**
 
-![ActionSystemDiagram](docs/media/ActionSystemDiagram.gif)
+![ActionSystemDiagram](Docs/Media/ActionSystem_Diagram.gif)
 
 
 ### **`ULuxAction`: 액션의 생명주기 관리**
