@@ -28,11 +28,13 @@
 
 ## 주요 하이라이트
 
-- **액션 상태머신**: `ULuxAction` + `Phase` 전환 규칙으로 Begin/Execute/Recovery/End/Interrupt, Dash/Leap/Landing 등을 선언적으로 구성
-- **태스크 조립식 설계**: `ULuxActionTask_PlayMontageAndWait`, `..._LeapToLocation`, `..._FollowSpline`, `..._LandingControl`, `..._WaitForServer` 등 비동기 유닛을 조합
-- **태그 지향 전투/효과**: `ULuxCombatManager`, `ULuxEffect`, `FLuxEffectSpec` + ByCaller 파라미터로 데미지/버프/CC 데이터-드리븐 처리
-- **쿨다운/패시브**: `ULuxCooldownTracker`로 태그 기반 쿨다운/감소, 이벤트 구독으로 패시브 트리거
-- **타겟팅/카메라/UI**: `UTargetingComponent`(오버랩/라인/스윕/우선순위), `ULuxCameraComponent`(모드), `LuxHUD`/`UW_ActionIcon`/`UW_ActionTooltip`
+| 기능 | 설명 |
+|------|------|
+| **액션 상태머신** | `ULuxAction` + `Phase` 전환 규칙으로 Begin/Execute/Recovery/End/Interrupt, Dash/Leap/Landing 등을 선언적으로 구성 |
+| **태스크 조립식 설계** | `ULuxActionTask_PlayMontageAndWait`, `..._LeapToLocation`, `..._FollowSpline`, `..._LandingControl`, `..._WaitForServer` 등 비동기 유닛을 조합 |
+| **태그 지향 전투/효과** | `ULuxCombatManager`, `ULuxEffect`, `FLuxEffectSpec` + ByCaller 파라미터로 데미지/버프/CC 데이터-드리븐 처리 |
+| **쿨다운/패시브** | `ULuxCooldownTracker`로 태그 기반 쿨다운/감소, 이벤트 구독으로 패시브 트리거 |
+| **타겟팅/카메라/UI** | `UTargetingComponent`(오버랩/라인/스윕/우선순위), `ULuxCameraComponent`(모드), `LuxHUD`/`UW_ActionIcon`/`UW_ActionTooltip` |
 
 ---
 
@@ -57,8 +59,11 @@
 
 ## 입력 가이드
 
-- **Q / E / R / LMB / RMB**: 액션 사용 (프로필/데이터에 매핑된 액션 실행)
-- **B**: 액션/효과/태그 상태를 표시하는 디버그 HUD 토글
+| 입력 | 기능 |
+|------|------|
+| **Q / E / R** | 액션 사용 (프로필/데이터에 매핑된 액션 실행) |
+| **LMB / RMB** | 액션 사용 (프로필/데이터에 매핑된 액션 실행) |
+| **B** | 액션/효과/태그 상태를 표시하는 디버그 HUD 토글 |
 
 > 입력은 `LuxGameplayTags::InputTag_*`에 매핑되어 있으며, 프로젝트 설정에 따라 변경하실 수 있습니다.
 
@@ -66,18 +71,16 @@
 
 ## 샘플 액션 쇼케이스 (GIF)
 
-- Hoarfrost — 장판 동결:  
-  ![Hoarfrost](docs/media/aurora_hoarfrost.gif)
-- Glacial Charge — 지형 분석 → 얼음길 생성 → 스플라인 돌진 → 재시전 대기:  
-  ![Glacial Charge](docs/media/aurora_glacial_charge.gif)
-- Frozen Simulacrum — 방향 섹션 점프 + 분신:  
-  ![Frozen Simulacrum](docs/media/aurora_frozen_simulacrum.gif)
-- Frozen Sword — 클라 예측 타격 → 서버 검증 → 데미지 적용:  
-  ![Frozen Sword](docs/media/aurora_frozen_sword.gif)
-- Cryoseism (궁극기) — 도약/충돌/착지 제어 + 연쇄 폭발:  
-  ![Cryoseism](docs/media/aurora_cryoseism.gif)
-- Cryoseism Passive — 기본공격 적중 시 궁극기 쿨다운 감소:  
-  ![Cryoseism Passive](docs/media/aurora_cryoseism_passive.gif)
+| 액션 | 설명 | GIF |
+|------|------|-----|
+| **Hoarfrost** | 장판 동결 | ![Hoarfrost](docs/media/aurora_hoarfrost.gif) |
+| **Glacial Charge** | 지형 분석 → 얼음길 생성 → 스플라인 돌진 → 재시전 대기 | ![Glacial Charge](docs/media/aurora_glacial_charge.gif) |
+| **Frozen Simulacrum** | 방향 섹션 점프 + 분신 | ![Frozen Simulacrum](docs/media/aurora_frozen_simulacrum.gif) |
+| **Frozen Sword** | 클라 예측 타격 → 서버 검증 → 데미지 적용 | ![Frozen Sword](docs/media/aurora_frozen_sword.gif) |
+| **Cryoseism (궁극기)** | 도약/충돌/착지 제어 + 연쇄 폭발 | ![Cryoseism](docs/media/aurora_cryoseism.gif) |
+| **Cryoseism Passive** | 기본공격 적중 시 궁극기 쿨다운 감소 | ![Cryoseism Passive](docs/media/aurora_cryoseism_passive.gif) |
+
+> GIF 경로는 `docs/media/*.gif` 기준 예시입니다. 실제 경로/파일은 리포지토리 환경에 맞게 수정 부탁드립니다.
 
 ---
 
@@ -161,19 +164,23 @@
 
 ## 데이터 주도 워크플로우
 
-- **레벨 데이터테이블**: 액션 레벨별 수치/파라미터 선언 (`/Game/Characters/Aurora/DT_Aurora`)
-- **InstancedStruct 조건/행동**: 페이즈 전환 조건(예: `FCondition_NotifyNameEquals`)과 행동을 데이터로 구성
-- **ByCaller 파라미터**: `FLuxEffectSpec::SetByCallerMagnitude(...)`로 런타임 수치 주입
-- **툴팁 수식**: `UW_ActionTooltip`이 `{StatName}`, `@ActionData@`, `[Expression]`을 파싱/치환 (수식 파서: `System/ExpressionEvaluator.*`)
+| 구성 요소 | 설명 | 예시 |
+|-----------|------|------|
+| **레벨 데이터테이블** | 액션 레벨별 수치/파라미터 선언 | `/Game/Characters/Aurora/DT_Aurora` |
+| **InstancedStruct 조건/행동** | 페이즈 전환 조건과 행동을 데이터로 구성 | `FCondition_NotifyNameEquals` |
+| **ByCaller 파라미터** | `FLuxEffectSpec::SetByCallerMagnitude(...)`로 런타임 수치 주입 | 데미지, 지속시간 등 |
+| **툴팁 수식** | `UW_ActionTooltip`이 `{StatName}`, `@ActionData@`, `[Expression]`을 파싱/치환 | 수식 파서: `System/ExpressionEvaluator.*` |
 
 ---
 
 ## 네트워킹/예측
 
-- **서버 권위**: 스폰, 데미지, CC, 상태 태그 변화는 서버 주도
-- **클라 예측**: 짧고 보수적인 예측(`ULuxActionTask_WaitForServer`)과 **Re-Home** 메커니즘으로 태스크/페이즈 재소유
-- **복제 컨테이너**: `FActiveLuxActionContainer`, `FActiveLuxEffectsContainer`, `FCooldownContainer`는 FFastArraySerializer 기반 NetDelta 복제를 사용
-- **이벤트 복제**: 태스크/페이즈 이벤트를 태그로 게시(`PostTaskEvent`), 섹션/노티파이/타임아웃에 의한 자동 전환 지원
+| 영역 | 설명 |
+|------|------|
+| **서버 권위** | 스폰, 데미지, CC, 상태 태그 변화는 서버 주도 |
+| **클라 예측** | 짧고 보수적인 예측(`ULuxActionTask_WaitForServer`)과 **Re-Home** 메커니즘으로 태스크/페이즈 재소유 |
+| **복제 컨테이너** | `FActiveLuxActionContainer`, `FActiveLuxEffectsContainer`, `FCooldownContainer`는 FFastArraySerializer 기반 NetDelta 복제를 사용 |
+| **이벤트 복제** | 태스크/페이즈 이벤트를 태그로 게시(`PostTaskEvent`), 섹션/노티파이/타임아웃에 의한 자동 전환 지원 |
 
 ---
 
@@ -199,10 +206,12 @@ Source/Lux
 
 ## 빌드/실행 방법
 
-1) 리포지토리 클론  
-2) `.uproject` 열기 → 프로젝트 파일 생성  
-3) 에디터 또는 IDE에서 빌드/실행  
-4) 다른 프로젝트에서 사용 시 `*.Build.cs`에 `Lux` 모듈 추가 및 프로젝트 태그 설정 동기화
+| 단계 | 작업 |
+|------|------|
+| **1** | 리포지토리 클론 |
+| **2** | `.uproject` 열기 → 프로젝트 파일 생성 |
+| **3** | 에디터 또는 IDE에서 빌드/실행 |
+| **4** | 다른 프로젝트에서 사용 시 `*.Build.cs`에 `Lux` 모듈 추가 및 프로젝트 태그 설정 동기화 |
 
 ---
 
@@ -247,18 +256,33 @@ ULuxActionTask_PlayMontageAndWait::PlayMontageAndWait(this, MontageToPlay, 1.0f)
 
 ## 디버그/툴링
 
-- **HUD 디버그**: `B` 키로 액션/효과/태그/카메라 상태 오버레이 토글 (`LuxHUD`)
-- **쿨다운 UI**: `UW_ActionIcon`이 시작/진행/종료 이벤트로 게이지 갱신
-- **로그 채널**: `LogLuxActionSystem`, `LogLuxCooldown`, `LogLuxCombat` 등
+| 도구 | 설명 |
+|------|------|
+| **HUD 디버그** | `B` 키로 액션/효과/태그/카메라 상태 오버레이 토글 (`LuxHUD`) |
+| **쿨다운 UI** | `UW_ActionIcon`이 시작/진행/종료 이벤트로 게이지 갱신 |
+| **로그 채널** | `LogLuxActionSystem`, `LogLuxCombat`, `LogLuxCooldown` 등 |
+
+---
+
+## 라이선스/문의
+
+| 항목 | 내용 |
+|------|------|
+| **라이선스** | 프로젝트 전용(내부 포트폴리오 용도). 외부 배포는 별도 협의 부탁드립니다. |
+| **모듈/아키텍처** | `Source/Lux/LuxModule.cpp`, `Lux.Build.cs` |
+| **액션 시스템** | `Source/Lux/ActionSystem/` |
+| **Aurora 샘플** | `ActionSystem/Actions/Aurora/`, `Actors/Action/Aurora/`, `Cues/Aurora/` |
 
 ---
 
 ### 참고 소스 링크 예시
 
-- `UAuroraAction_Hoarfrost`: `ActionSystem/Actions/Aurora/AuroraAction_Hoarfrost.cpp`
-- `UAuroraAction_GlacialCharge`: `ActionSystem/Actions/Aurora/AuroraAction_GlacialCharge.cpp`
-- `UAuroraAction_FrozenSimulacrum`: `ActionSystem/Actions/Aurora/AuroraAction_FrozenSimulacrum.cpp`
-- `UAuroraAction_FrozenSword`: `ActionSystem/Actions/Aurora/AuroraAction_FrozenSword.cpp`
-- `UAuroraAction_Cryoseism`: `ActionSystem/Actions/Aurora/AuroraAction_Cryoseism.cpp`
+| 액션 클래스 | 파일 경로 |
+|-------------|-----------|
+| `UAuroraAction_Hoarfrost` | `ActionSystem/Actions/Aurora/AuroraAction_Hoarfrost.cpp` |
+| `UAuroraAction_GlacialCharge` | `ActionSystem/Actions/Aurora/AuroraAction_GlacialCharge.cpp` |
+| `UAuroraAction_FrozenSimulacrum` | `ActionSystem/Actions/Aurora/AuroraAction_FrozenSimulacrum.cpp` |
+| `UAuroraAction_FrozenSword` | `ActionSystem/Actions/Aurora/AuroraAction_FrozenSword.cpp` |
+| `UAuroraAction_Cryoseism` | `ActionSystem/Actions/Aurora/AuroraAction_Cryoseism.cpp` |
 
 
