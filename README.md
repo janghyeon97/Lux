@@ -24,8 +24,8 @@ Lux는 게임 클라이언트 개발 포트폴리오를 위해 제작된 샘플/
 
 ## 주요 기능
 
-- **액션 상태머신**:
-- `ULuxAction`과 Phase 전환 규칙을 통해 Begin/Execute/Recovery/End/Interrupt, Dash/Leap/Landing 등의 복잡한 액션 흐름을 선언적으로 구성합니다.
+- **액션 상태머신**</br>
+  `ULuxAction`과 Phase 전환 규칙을 통해 Begin/Execute/Recovery/End/Interrupt, Dash/Leap/Landing 등의 복잡한 액션 흐름을 선언적으로 구성합니다.
 
 - **조립식 태스크 설계**: `PlayMontageAndWait`, `LeapToLocation`, `FollowSpline` 등 비동기 유닛을 조합하여 액션을 손쉽게 제작할 수 있습니다.
 
