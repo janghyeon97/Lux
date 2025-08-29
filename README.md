@@ -100,25 +100,24 @@ ActivationPolicy    = ELuxActionActivationPolicy::OnInputTriggered;
  - 기본 흐름뿐만 아니라, Interrupt, 이동, 재시전과 같은 특수 상황도 페이즈 전환 규칙을 통해 유연하게 처리합니다.
 
 ```cpp
-    // 성공: 'StartFreeze' 노티파이 발생 시 'Execute' 페이즈로 전환
-		FPhaseTransition Transition;
-		Transition.TransitionType = EPhaseTransitionType::OnTaskEvent;
-		Transition.EventTag = LuxGameplayTags::Task_Event_Montage_NotifyBegin;
-		Transition.NextPhaseTag = LuxPhaseTags::Phase_Action_Execute;
+// 성공: 'StartFreeze' 노티파이 발생 시 'Execute' 페이즈로 전환
+FPhaseTransition Transition;
+Transition.TransitionType = EPhaseTransitionType::OnTaskEvent;
+Transition.EventTag = LuxGameplayTags::Task_Event_Montage_NotifyBegin;
+Transition.NextPhaseTag = LuxPhaseTags::Phase_Action_Execute;
 
-		// 조건: Notify 이름이 'StartFreeze'인 경우
-		FInstancedStruct Condition = FInstancedStruct::Make<FCondition_NotifyNameEquals>();
-		Condition.GetMutable<FCondition_NotifyNameEquals>().RequiredName = FName("StartFreeze");
-		Transition.Conditions.Add(Condition);
+// 조건: Notify 이름이 'StartFreeze'인 경우
+FInstancedStruct Condition = FInstancedStruct::Make<FCondition_NotifyNameEquals>();
+Condition.GetMutable<FCondition_NotifyNameEquals>().RequiredName = FName("StartFreeze");
+Transition.Conditions.Add(Condition);
 
-		// 예외: 시간 초과 시 'Execute' 페이즈로 강제 전환
-		FPhaseTransition TimeoutTransition;
-		TimeoutTransition.TransitionType = EPhaseTransitionType::OnDurationEnd;
-		TimeoutTransition.Duration = 1.5f; // 1.5초 후 시간 초과
-		TimeoutTransition.NextPhaseTag = LuxPhaseTags::Phase_Action_Execute;
+// 예외: 시간 초과 시 'Execute' 페이즈로 강제 전환
+FPhaseTransition TimeoutTransition;
+TimeoutTransition.TransitionType = EPhaseTransitionType::OnDurationEnd;
+TimeoutTransition.Duration = 1.5f; // 1.5초 후 시간 초과
+TimeoutTransition.NextPhaseTag = LuxPhaseTags::Phase_Action_Execute;
 
-		PhaseTransitionRules.FindOrAdd(LuxPhaseTags::Phase_Action_Begin).Add(Transition);
-		PhaseTransitionRules.FindOrAdd(LuxPhaseTags::Phase_Action_Begin).Add(TimeoutTransition);
+PhaseTransitionRules.FindOrAdd(LuxPhaseTags::Phase_Action_Begin).Add(Transition);
 ```
 
 #### 1.2 태스크 시스템
@@ -163,38 +162,52 @@ ULuxActionTask_LeapToLocation::LeapToLocation(this, TargetLocation);
 ## 데이터 주도 워크플로우
 
 - **데이터 테이블**: 액션 레벨별 수치와 파라미터를 DataTable로 관리합니다. (`/Game/Characters/Aurora/DT_Aurora`)
+---
 
 - **InstancedStruct**: 페이즈 전환 조건(`FCondition_NotifyNameEquals`)과 행동을 데이터 에셋으로 구성합니다.
 
 ```cpp
-// 전환 규칙 구조체
-struct FPhaseTransition
-{
-  UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Transition")
-  EPhaseTransitionType TransitionType = EPhaseTransitionType::Manual;
-
-  UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Transition")
-  FGameplayTag EventTag;
-
-  UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Transition", BaseStruct = "/Script/Lux.PhaseConditionBase"))
-  TArray<FInstancedStruct> Conditions;
-
-  UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Transition")
-  FGameplayTag NextPhaseTag;
-}
-
-/**
- * 페이즈에 진입할 때 액션의 쿨다운을 시작시킵니다.
- */
+// 페이즈에 진입할 때 액션의 쿨다운을 시작시킵니다.
 USTRUCT(BlueprintType)
 struct FPhaseBehavior_StartCooldown : public FPhaseBehaviorBase
 {
     GENERATED_BODY()
-public:
+    public:
     virtual void Execute(ULuxAction* Action) const override;
 };
-```
 
+// 페이즈에 진입할 때 데이터 에셋에 정의되어 있는 Behavior 들을 실행합니다.
+void ULuxAction::OnPhaseEnter(const FGameplayTag& PhaseTag, UActionSystemComponent& SourceASC)
+{
+	  for (const FInstancedStruct& BehaviorStruct : Behaviors)
+	  {
+        const FPhaseBehaviorBase& Behavior = BehaviorStruct.Get<const FPhaseBehaviorBase>();
+
+		    // 네트워크 실햄 정책 확인
+		    bool bShouldExecute = false;
+		    switch (Behavior.NetExecutionPolicy)
+		    {
+		        case EPhaseBehaviorNetExecutionPolicy::ServerOnly:
+			      bShouldExecute = (CurrentRole == ENetRole::ROLE_Authority);
+			      break;
+
+		        case EPhaseBehaviorNetExecutionPolicy::ClientOnly:
+			      bShouldExecute = (CurrentRole == ENetRole::ROLE_AutonomousProxy);
+			      break;
+
+		        case EPhaseBehaviorNetExecutionPolicy::All:
+			      bShouldExecute = true;
+			      break;
+		    }
+
+		    if (bShouldExecute)
+		    {
+			    Behavior.Execute(Action);
+		    }
+	  }
+}
+```
+---
 - **SetByCaller 파라미터**: `FLuxEffectSpec::SetByCallerMagnitude(...)`를 통해 런타임에 계산된 수치를 효과에 주입합니다.
 
 ```cpp
@@ -208,10 +221,10 @@ if (DamageSpec)
 	DamageSpec->SetByCallerMagnitude(LuxGameplayTags::Effect_SetByCaller_Magical_Scale, MagicalScale);
 }
 ```
-
+---
 - **툴팁 수식**: `UW_ActionTooltip`에서 `{StatName}`, `@ActionData@`, `[Expression]` 같은 형식의 문자열을 파싱하여 동적으로 툴팁을 생성합니다.<br>
- ![ActionTooltip1](Docs/Media/Action_Tooltip_Data.png)
- ![ActionTooltip2](Docs/Media/Action_Tooltip.png)
+
+ ![ActionTooltip](Docs/Media/Action_Tooltip.png)
 
 ---
 
