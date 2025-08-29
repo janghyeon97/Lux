@@ -88,14 +88,49 @@ Lux의 시스템은 각자의 역할이 명확하게 구분되어 있습니다. 
 
 ### 1. 액션 시스템 (Action System)
  액션 시스템은 캐릭터의 모든 행동(스킬, 공격, 이동 등)의 생명주기를 관리하고 실행합니다.
+```cpp
+// 새 액션 클래스 기본 설정 예시
+ActionIdentifierTag = LuxActionTags::Action_MyAction;
+InstancingPolicy    = ELuxActionInstancingPolicy::InstancedPerExecution;
+ActivationPolicy    = ELuxActionActivationPolicy::OnInputTriggered;
+```
 
 #### 1.1 페이즈 시스템
  - 액션의 진행 단계를 `Phase.Action.Begin / Execute / End` 와 같이 GameplayTag 로 정희합니다.
  - 기본 흐름뿐만 아니라, Interrupt, 이동, 재시전과 같은 특수 상황도 페이즈 전환 규칙을 통해 유연하게 처리합니다.
 
+```cpp
+    // 성공: 'StartFreeze' 노티파이 발생 시 'Execute' 페이즈로 전환
+		FPhaseTransition Transition;
+		Transition.TransitionType = EPhaseTransitionType::OnTaskEvent;
+		Transition.EventTag = LuxGameplayTags::Task_Event_Montage_NotifyBegin;
+		Transition.NextPhaseTag = LuxPhaseTags::Phase_Action_Execute;
+
+		// 조건: Notify 이름이 'StartFreeze'인 경우
+		FInstancedStruct Condition = FInstancedStruct::Make<FCondition_NotifyNameEquals>();
+		Condition.GetMutable<FCondition_NotifyNameEquals>().RequiredName = FName("StartFreeze");
+		Transition.Conditions.Add(Condition);
+
+		// 예외: 시간 초과 시 'Execute' 페이즈로 강제 전환
+		FPhaseTransition TimeoutTransition;
+		TimeoutTransition.TransitionType = EPhaseTransitionType::OnDurationEnd;
+		TimeoutTransition.Duration = 1.5f; // 1.5초 후 시간 초과
+		TimeoutTransition.NextPhaseTag = LuxPhaseTags::Phase_Action_Execute;
+
+		PhaseTransitionRules.FindOrAdd(LuxPhaseTags::Phase_Action_Begin).Add(Transition);
+		PhaseTransitionRules.FindOrAdd(LuxPhaseTags::Phase_Action_Begin).Add(TimeoutTransition);
+```
+
 #### 1.2 태스크 시스템
  - 액션을 구성하는 가장 작은 단위의 작업입니다. 
  - PlayMontageAndWait(애니메이션 재생), LeapToLocation(도약), FollowSpline(경로 이동)과 같은 비동기적인 작업들을 태스크로 구현합니다.
+```cpp
+// 몽타주 재생 및 종료 대기 태스크 호출 예시
+ULuxActionTask_PlayMontageAndWait::PlayMontageAndWait(this, MontageToPlay, 1.0f);
+
+// 특정 위치로 도약하는 태스크 호출 예시
+ULuxActionTask_LeapToLocation::LeapToLocation(this, TargetLocation);
+```
 
 ### 2. 게임플레이 이펙트 (LuxEffect)
 
@@ -131,9 +166,52 @@ Lux의 시스템은 각자의 역할이 명확하게 구분되어 있습니다. 
 
 - **InstancedStruct**: 페이즈 전환 조건(`FCondition_NotifyNameEquals`)과 행동을 데이터 에셋으로 구성합니다.
 
+```cpp
+// 전환 규칙 구조체
+struct FPhaseTransition
+{
+  UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Transition")
+  EPhaseTransitionType TransitionType = EPhaseTransitionType::Manual;
+
+  UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Transition")
+  FGameplayTag EventTag;
+
+  UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Transition", BaseStruct = "/Script/Lux.PhaseConditionBase"))
+  TArray<FInstancedStruct> Conditions;
+
+  UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Transition")
+  FGameplayTag NextPhaseTag;
+}
+
+/**
+ * 페이즈에 진입할 때 액션의 쿨다운을 시작시킵니다.
+ */
+USTRUCT(BlueprintType)
+struct FPhaseBehavior_StartCooldown : public FPhaseBehaviorBase
+{
+    GENERATED_BODY()
+public:
+    virtual void Execute(ULuxAction* Action) const override;
+};
+```
+
 - **SetByCaller 파라미터**: `FLuxEffectSpec::SetByCallerMagnitude(...)`를 통해 런타임에 계산된 수치를 효과에 주입합니다.
 
-- **툴팁 수식**: `UW_ActionTooltip`에서 `{StatName}`, `@ActionData@`, `[Expression]` 같은 형식의 문자열을 파싱하여 동적으로 툴팁을 생성합니다.
+```cpp
+FLuxEffectSpecHandle DamageHandle = SourceASC->MakeOutgoingSpec(DamageLE, Level, EffectContext);
+FLuxEffectSpec* DamageSpec = DamageHandle.Get();
+if (DamageSpec)
+{
+	DamageSpec->SetByCallerMagnitude(LuxGameplayTags::Effect_SetByCaller_Physical_Base, PhysicalDamage);
+	DamageSpec->SetByCallerMagnitude(LuxGameplayTags::Effect_SetByCaller_Magical_Base,  MagicalDamage);
+	DamageSpec->SetByCallerMagnitude(LuxGameplayTags::Effect_SetByCaller_Physical_Scale, PhysicalScale);
+	DamageSpec->SetByCallerMagnitude(LuxGameplayTags::Effect_SetByCaller_Magical_Scale, MagicalScale);
+}
+```
+
+- **툴팁 수식**: `UW_ActionTooltip`에서 `{StatName}`, `@ActionData@`, `[Expression]` 같은 형식의 문자열을 파싱하여 동적으로 툴팁을 생성합니다.<br>
+ ![ActionTooltip1](Docs/Media/Action_Tooltip_Data.png)
+ ![ActionTooltip2](Docs/Media/Action_Tooltip.png)
 
 ---
 
