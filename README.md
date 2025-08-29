@@ -97,14 +97,32 @@ Lux의 시스템은 각자의 역할이 명확하게 구분되어 있습니다. 
  - 액션을 구성하는 가장 작은 단위의 작업입니다. 
  - PlayMontageAndWait(애니메이션 재생), LeapToLocation(도약), FollowSpline(경로 이동)과 같은 비동기적인 작업들을 태스크로 구현합니다.
 
-### 2. ULuxEffect: 데이터 기반 효과 처리
+### 2. 게임플레이 이펙트 (LuxEffect)
 
-데미지, 버프, CC 등 다양한 효과를 `FLuxEffectSpec`이라는 데이터 구조를 통해 처리합니다. ByCaller 파라미터를 사용하여 런타임에 동적으로 수치를 변경할 수 있습니다.
+`ULuxEffect`는 게임플레이에서 발생하는 모든 효과(데미지, 힐링, 버프, 디버프, CC 등)를 정의하는 데이터 에셋입니다. <br>
+각 효과는 `FLuxEffectSpec` 구조체를 통해 실행 시점의 세부 정보(지속시간, 레벨, 수치, 대상 등)를 관리합니다.
 
-### **`ULuxAttribute`: 속성 관리**
+#### 핵심 특징:
+1. **SetByCaller 파라미터:**`FLuxEffectSpec::SetByCallerMagnitude(...)`를 통해 런타임에 동적으로 계산된 수치를 효과에 주입할 수 있습니다. <br>
+  > 예를 들어 "캐릭터의 공격력 * 1.5 + 100" 같은 수식을 런타임에 평가하여 데미지를 결정합니다.
+2. **태그 기반 시스템**: `GameplayTag`를 활용하여 효과의 종류, 속성, 상호작용을 체계적으로 관리합니다.
+3. **스택 관리**: 동일한 효과가 중복 적용될 때의 스택 수와 최대 스택 제한을 설정할 수 있습니다.
+4. **지속시간 및 주기**: 즉시 효과와 지속 효과를 모두 지원하며, 주기적으로 적용되는 효과(예: 초당 데미지)도 구현 가능합니다.
 
-캐릭터의 속성을 `CombatSet`, `ResourceSet`, `MovementSet`, `DefenseSet`으로 나누어 체계적으로 관리합니다. 모든 속성 변경은 서버의 권위를 따르며, `ULuxCombatManager`가 데미지 계산과 CC 효과 적용을 중앙에서 처리합니다.
+### 3. 속성 시스템 (LuxAttributeSet)**
 
+캐릭터의 모든 수치적 특성을 체계적으로 관리하는 시스템입니다.
+
+**속성 세트 구성:**
+- **CombatSet**: 공격력, 치명타 확률, 치명타 피해 등 전투 관련 수치
+- **ResourceSet**: 체력, 마나, 에너지 등 자원 관련 수치  
+- **MovementSet**: 이동 속도, 점프력, 가속도 등 이동 관련 수치
+- **DefenseSet**: 방어력, 마법 저항, 회피율 등 방어 관련 수치
+
+**핵심 특징:**
+- **서버 권위**: 모든 속성 값의 변경은 서버의 권위를 따르며, 클라이언트는 표시 목적으로만 사용합니다.
+- **이펙트 기반 수정**: 속성 값의 변경은 반드시 `ULuxEffect`를 통해 이루어지며, 직접적인 수정은 불가능합니다.
+- **수식 기반 계산**: 기본값(BaseValue)과 수정자(Modifier)를 조합하여 최종 값을 계산합니다.
 ---
 
 ## 데이터 주도 워크플로우
@@ -113,7 +131,7 @@ Lux의 시스템은 각자의 역할이 명확하게 구분되어 있습니다. 
 
 - **InstancedStruct**: 페이즈 전환 조건(`FCondition_NotifyNameEquals`)과 행동을 데이터 에셋으로 구성합니다.
 
-- **ByCaller 파라미터**: `FLuxEffectSpec::SetByCallerMagnitude(...)`를 통해 런타임에 계산된 수치를 효과에 주입합니다.
+- **SetByCaller 파라미터**: `FLuxEffectSpec::SetByCallerMagnitude(...)`를 통해 런타임에 계산된 수치를 효과에 주입합니다.
 
 - **툴팁 수식**: `UW_ActionTooltip`에서 `{StatName}`, `@ActionData@`, `[Expression]` 같은 형식의 문자열을 파싱하여 동적으로 툴팁을 생성합니다.
 
@@ -211,3 +229,5 @@ ULuxActionTask_PlayMontageAndWait::PlayMontageAndWait(this, MontageToPlay, 1.0f)
 ## 라이선스
 
 이 프로젝트는 포트폴리오 용도로 제작되었으며, 외부 배포 시에는 별도 협의가 필요합니다. 자세한 내용은 문의해 주세요.
+
+
