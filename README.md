@@ -1,6 +1,6 @@
 # Lux
 
-Lux는 게임 클라이언트 개발 포트폴리오를 위해 제작된 샘플/레퍼런스 프로젝트입니다. 데이터 주도 액션 시스템과 태그 기반의 전투, 효과, 타겟팅 파이프라인을 제공하며, "Aurora" 캐릭터의 다양한 액션을 통해 그 기능을 선보입니다.
+Lux는 게임 클라이언트 개발 포트폴리오를 위해 제작된 프로젝트입니다.<br>
 
 ---
 
@@ -314,11 +314,3 @@ PhaseTransitionRules.FindOrAdd(LuxPhaseTags::Phase_Action_Begin).Add(T);
 ```cpp
 ULuxActionTask_PlayMontageAndWait::PlayMontageAndWait(this, MontageToPlay, 1.0f);
 ```
-
----
-
-## 라이선스
-
-이 프로젝트는 포트폴리오 용도로 제작되었으며, 외부 배포 시에는 별도 협의가 필요합니다. 자세한 내용은 문의해 주세요.
-
-
