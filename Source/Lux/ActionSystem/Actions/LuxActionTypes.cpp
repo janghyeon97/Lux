@@ -361,7 +361,9 @@ void FActiveLuxActionContainer::PostReplicatedChange(const TArrayView<int32>& Ch
 
 void FActiveLuxActionContainer::PreReplicatedRemove(const TArrayView<int32>& RemovedIndices, int32 FinalSize)
 {
-	// 활성 액션이 제거되기 직전에 클라이언트에서 호출됩니다.
+	// 활성 액션이 배열에서 제거되기 직전 클라이언트에서 호출됩니다.
+	// 서버가 설정한 bWasCancelled 값을 읽어 적절한 정리 로직을 실행합니다.
+	// AutonomousProxy, SimulatedProxy 모두 이 콜백을 통해 정리됩니다.
 	if (OwnerComponent.IsValid() == false)
 	{
 		return;
@@ -370,10 +372,25 @@ void FActiveLuxActionContainer::PreReplicatedRemove(const TArrayView<int32>& Rem
 	for (const int32 Index : RemovedIndices)
 	{
 		const FActiveLuxAction& RemovedAction = Items[Index];
-		if (ULuxAction* Action = RemovedAction.Action)
+		ULuxAction* Action = RemovedAction.Action;
+		if (!Action)
 		{
-			//OwnerComponent->ActiveActionMap.Remove(RemovedAction.Handle);
-			UE_LOG(LogLuxActionSystem, Log, TEXT("클라이언트: 활성 액션 '%s'가 제거됩니다."), *Action->GetName());
+			continue;
+		}
+
+		UE_LOG(LogLuxActionSystem, Log, TEXT("[클라이언트] 활성 액션 '%s' 정리 중 (Cancelled: %s)"),
+			*Action->GetName(),
+			RemovedAction.bWasCancelled ? TEXT("true") : TEXT("false"));
+
+		// 서버에서 기록한 취소 여부를 기반으로 클라이언트 정리 로직을 실행합니다.
+		Action->OnActionEnd(RemovedAction.bWasCancelled);
+
+		// InstancedPerActor 정책의 액션은 재사용되므로
+		// 상태를 Inactive로 초기화하여 다음 활성화를 준비합니다.
+		if (Action->GetInstancingPolicy() == ELuxActionInstancingPolicy::InstancedPerActor)
+		{
+			Action->LifecycleState = ELuxActionLifecycleState::Inactive;
+			Action->ActiveActionHandle = FActiveLuxActionHandle();
 		}
 	}
 }

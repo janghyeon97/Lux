@@ -265,6 +265,14 @@ public:
 	/** 이 활성화가 종료되었는지 여부 */
 	UPROPERTY()
 	bool bIsDone = false;
+
+	/**
+	 * 액션이 종료될 때 취소(Cancel)로 인한 것인지 여부입니다.
+	 * 서버에서 OnActionEnd 호출 시 설정되며, PreReplicatedRemove를 통해
+	 * 클라이언트가 별도의 RPC 없이 올바른 정리 로직을 실행할 수 있도록 합니다.
+	 */
+	UPROPERTY()
+	bool bWasCancelled = false;
 };
 
 

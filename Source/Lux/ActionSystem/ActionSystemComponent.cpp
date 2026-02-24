@@ -987,6 +987,11 @@ void UActionSystemComponent::OnActionEnd(const FActiveLuxActionHandle& Handle, b
 		LuxActionSpecs.MarkItemDirty(*Spec);
 	}
 
+	// 클라이언트가 PreReplicatedRemove에서 올바른 정리 로직을 실행할 수 있도록
+	// 배열 제거 전에 취소 여부를 기록하고 복제합니다.
+	ActiveLuxAction.bWasCancelled = bWasCancelled;
+	ActiveLuxActions.MarkItemDirty(ActiveLuxAction);
+
 	//ActiveActionMap.Remove(Handle);
 	ActiveLuxActions.Items.RemoveAt(FoundIndex);
 	ActiveLuxActions.MarkArrayDirty();
@@ -1213,41 +1218,14 @@ void UActionSystemComponent::NotifyActionEnded(const FActiveLuxActionHandle& Han
 		OnActionEnded.Broadcast(ActiveAction->Action, bWasCancelled);
 	}
 
-	Client_NotifyActionEnded(Handle, bWasCancelled);
+	// [REFACTORED] Client_NotifyActionEnded RPC 제거.
+	// bWasCancelled 값은 FActiveLuxAction.bWasCancelled 필드를 통해 복제되며,
+	// 클라이언트는 PreReplicatedRemove 콜백에서 이 값을 읽어 정리 로직을 실행합니다.
 }
 
-void UActionSystemComponent::Client_NotifyActionEnded_Implementation(FActiveLuxActionHandle Handle, bool bWasCancelled)
-{
-	FActiveLuxAction* ActiveAction = FindActiveAction(Handle);
-	if (!ActiveAction)
-	{
-		return;
-	}
-
-	ULuxAction* ActionInstance = ActiveAction->Action;
-	if (!ActionInstance)
-	{
-		return;
-	}
-
-	// 액션의 OnActionEnd를 호출하여 클라이언트 측 정리 로직을 실행합니다.
-	ActionInstance->OnActionEnd(bWasCancelled);
-
-	// InstancedPerActor 정책의 액션은 재사용되므로 클라이언트에서도 상태를 Inactive로 되돌려야 합니다.
-	if (ActionInstance->InstancingPolicy == ELuxActionInstancingPolicy::InstancedPerActor)
-	{
-		ActionInstance->LifecycleState = ELuxActionLifecycleState::Inactive;
-		ActionInstance->ActiveActionHandle = FActiveLuxActionHandle();
-	}
-
-	UE_LOG(LogLuxActionSystem, Error, TEXT("================>>> [CLIENT] Action Ended: %s | Owner: %s | InstancingPolicy: %s | PredictionKey: %d ---"),
-		*ActionInstance->GetName(),
-		*GetNameSafe(GetOwner()),
-		*UEnum::GetValueAsString(ActionInstance->GetInstancingPolicy()),
-		ActiveAction->PredictionKey.Key);
-}
 
 // ======================================== Event-Driven Activation ========================================
+
 
 void UActionSystemComponent::TryActivateActionsByEvent(FGameplayTag EventTag, const FContextPayload& Payload)
 {

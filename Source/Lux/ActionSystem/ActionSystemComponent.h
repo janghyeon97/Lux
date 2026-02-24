@@ -147,10 +147,6 @@ public:
 	/** 활성화된 액션이 종료되었을 때 호출됩니다. */
 	void OnActionEnd(const FActiveLuxActionHandle& Handle, bool bWasCancelled);
 
-	/** 서버가 클라이언트에게 액션이 종료되었음을 알리고 취소 여부를 전달합니다. */
-	UFUNCTION(Client, Reliable)
-	void Client_NotifyActionEnded(FActiveLuxActionHandle Handle, bool bWasCancelled);
-
 protected:
 	// ======================================== Action Activation Checks ========================================
 
